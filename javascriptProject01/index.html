@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <div class="nav-header">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <img
+            src="data:image/png;base64,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"
+            class="logo"
+            alt="logo"
+          />
+        </div>
+
+        <!-- links -->
+        <div class="overley"></div>
+
+        <ul class="links">
+          <button class="nav-toggle romove-togle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- javascript-->
+
+    <script src="app.js"></script>
+  </body>
+</html>

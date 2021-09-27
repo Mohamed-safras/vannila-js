@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.continer {
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.grocery-form {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.grocery-container {
+  margin-top: 20px;
+
+  width: 100%;
+  padding: 10px;
+  visibility: hidden;
+}
+.show-item {
+  visibility: visible;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.grocery-list {
+  background-color: rgb(179, 245, 229);
+  border-radius: 10px;
+  padding: 10px;
+}
+.grocery-item .title {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(93, 153, 241);
+}
+.grocery-item button {
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(93, 153, 241);
+  font-size: 16px;
+  font-weight: 600;
+}
+.grocery-btn {
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: rgb(93, 153, 241);
+  font-size: 16px;
+  font-weight: 600;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.grocery {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  background-color: rgb(93, 153, 241);
+  font-size: 16px;
+  color: whitesmoke;
+  flex: 1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.alert {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: white;
+  font-size: 16px;
+}
+.danger {
+  background-color: #cc3300;
+}
+
+.success {
+  background-color: #00cc33;
+}
+
+.clear-container {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.clear-container .clear {
+  color: #bb3c12;
+  padding: 5px;
+  font-size: 16px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
